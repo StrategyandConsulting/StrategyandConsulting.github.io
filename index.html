@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A focused consulting website for strategy, operations, and growth advisory services."
+    >
+    <title>Strategy & Consulting Group | Practical Growth Advisory</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Strategy & Consulting Group home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Strategy & Consulting Group</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Consulting introduction">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=85"
+          alt="Consultants working through a business planning session"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Strategy, operations, and growth advisory</p>
+          <h1>Clear decisions for companies ready to move.</h1>
+          <p class="hero-copy">
+            Strategy & Consulting Group helps leadership teams sharpen priorities, improve operating
+            rhythm, and turn ambitious plans into measurable progress.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#contact">Book a consultation</a>
+            <a class="button button-secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div>
+          <p class="section-kicker">Built for focused execution</p>
+          <h2>We work with growing teams that need sharper strategy and cleaner follow-through.</h2>
+        </div>
+        <p>
+          Whether you are entering a new market, fixing operational drag, or aligning a team around
+          the next stage of growth, we bring structure, judgment, and practical momentum.
+        </p>
+      </section>
+
+      <section id="services" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Services</p>
+          <h2>Advisory work shaped around the decisions in front of you.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-number">01</span>
+            <h3>Growth Strategy</h3>
+            <p>
+              Define the customer segments, value propositions, and market moves that deserve your
+              team’s attention.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="card-number">02</span>
+            <h3>Operating Model</h3>
+            <p>
+              Improve planning cadence, ownership, handoffs, and metrics so strong ideas survive
+              daily execution.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="card-number">03</span>
+            <h3>Executive Alignment</h3>
+            <p>
+              Facilitate working sessions that turn scattered priorities into a shared direction and
+              concrete next steps.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach" class="section section-split">
+        <div>
+          <p class="section-kicker">Approach</p>
+          <h2>Concise diagnosis, practical recommendations, visible progress.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Understand</h3>
+            <p>Interview stakeholders, review performance signals, and map the real constraints.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Decide</h3>
+            <p>Separate essential choices from background noise and build a clear action plan.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Execute</h3>
+            <p>Support implementation with operating rituals, accountability, and course correction.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section results-section">
+        <div class="section-heading">
+          <p class="section-kicker">Proof points</p>
+          <h2>Representative outcomes from focused consulting engagements.</h2>
+        </div>
+        <div class="stats-grid" aria-label="Consulting result examples">
+          <div>
+            <strong>18%</strong>
+            <span>faster quarterly planning cycle after operating rhythm redesign</span>
+          </div>
+          <div>
+            <strong>3x</strong>
+            <span>clearer executive reporting cadence across business units</span>
+          </div>
+          <div>
+            <strong>42</strong>
+            <span>customer interviews synthesized into a market-entry roadmap</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s clarify the next move.</h2>
+          <p>
+            Share a little about your company, the decision you are working through, and the outcome
+            you want. We’ll respond within two business days.
+          </p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="post">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            What are you working on?
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Strategy & Consulting Group</span>
+      <a href="mailto:nour@strategyandconsultinggroup.com">nour@strategyandconsultinggroup.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
